@@ -24,10 +24,28 @@ library(glue)
 
 ```{r function}
 
-dire_bonjour<-function(prenom){
-  glue("Bonjour {prenom} !")
+#' Dire bonjour
+#'
+#' @param prenom
+#'
+#' @return la fonction renvoit un texte dire bonjour
+#' @export
+#' @import glue
+#'
+#' @examplesdire_bonjour("Paul") renvoie ## Bonjour, paul !
+#' S'il n'y a pas de prénom d'indiqué, renvoie ## Bonjour, toi!
+#'
+
+dire_bonjour<-function(prenom = NULL){
+  if(is.null(prenom)){
+    glue('## Bonjour, toi !')
+
+  }else{
+
+  glue("## Bonjour, {prenom} !")
+
+  }
 }
 
-dire_bonjour("paul")
 ```
-  Cette fonction permet à l'utilisateur de se voir dire bonjour par R.
+  Cette fonction permet à l'utilisateur de se voir dire bonjour par R. Et lorsqu'aucun prénom n'a été indiqué, elle renvoie "## Bonjour, toi !"
