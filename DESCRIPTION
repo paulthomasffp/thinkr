@@ -1,0 +1,18 @@
+Package: paulthomas
+Title: Ce package permet de dire bonjour a un utilisateur
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "paul",
+           family = "thomas",
+           role = c("aut", "cre"),
+           email = "pthomas@francefilierepeche.fr")
+Description: ce package permet de dire bonjour à un utilisateur au travers de la fonction principale dire_bonjour.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+Imports: glue
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
