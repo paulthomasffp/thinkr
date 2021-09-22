@@ -2,7 +2,7 @@
 #'
 #' @param prenom
 #'
-#' @return la fonction renvoit un texte dire bonjour
+#' @return la fonction renvoit un texte dire bonjour est ce que ca marche ????
 #' @export
 #' @import glue
 #'
